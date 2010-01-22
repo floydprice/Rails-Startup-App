@@ -46,24 +46,8 @@ run "rm public/favicon.ico"
 run "rm public/robots.txt"
 run "rm public/images/rails.png"
 
-# Set up git repository
-git :init
-git :add => '.'
 
-# Set up .gitignore files
-run "touch tmp/.gitignore log/.gitignore vendor/.gitignore"
-run %{find . -type d -empty | grep -v "vendor" | grep -v ".git" | grep -v "tmp" | xargs -I xxx touch xxx/.gitignore}
-file '.gitignore', <<-END
-.DS_Store
-log/*.log
-/log/*.pid
-/coverage/*
-tmp/**/*
-config/database.yml
-db/*.sqlite3
-vendor/rails
-tmp/sent_mails/*
-END
+
 
 
 commit_state "Initial setup"

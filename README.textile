@@ -3,7 +3,7 @@ h1. Rails Startup Template
 This template lets you to create quickly new Rails applications using Rails 2.3. To use it, just specify the -m switch when creating a Rails application:
 
 <pre><code>
-rails new_app_name -m http://github.com/devinterface/Rails-Startup-App/raw/master/rails_startup.rb
+rails new_app_name -m http://github.com/floydprice/Rails-Startup-App/raw/master/rails_startup.rb
 </code></pre>
 
 h2. Generated Application
