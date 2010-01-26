@@ -19,11 +19,7 @@ end
 def from_devinterface_repo(github_user, from, to = from.split("/").last)
   download("http://github.com/#{github_user}/Rails-Startup-App/raw/master/#{from}", to)
 end
- 
-def commit_state(comment)
-  git :add => "."
-  git :commit => "-am '#{comment}'"
-end
+
 
 # grab an arbitrary file from github
 def file_from_repo(github_user, repo, sha, filename, to = filename)
@@ -581,7 +577,7 @@ rake('db:migrate')
 
 rake('sweatshop:generate')
 
-git :commit => "-a -m 'Initial commit'"
+
 
 # Success!
 puts "SUCCESS!"
