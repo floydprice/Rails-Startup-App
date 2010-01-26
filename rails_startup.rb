@@ -20,7 +20,9 @@ def from_devinterface_repo(github_user, from, to = from.split("/").last)
   download("http://github.com/#{github_user}/Rails-Startup-App/raw/master/#{from}", to)
 end
 
+def commit_state
 
+end
 # grab an arbitrary file from github
 def file_from_repo(github_user, repo, sha, filename, to = filename)
   download("http://github.com/#{github_user}/#{repo}/raw/#{sha}/#{filename}", to)
