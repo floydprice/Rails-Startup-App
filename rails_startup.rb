@@ -6,7 +6,7 @@
 require 'open-uri'
 require 'yaml'
 require 'base64'
-
+dd
 
 def download(from, to = from.split("/").last)
   #run "curl -s -L #{from} > #{to}"
